@@ -1,0 +1,151 @@
+.bookingComplate {
+    margin-top: 62px;
+    border-top: solid 1px #ccc;
+    padding-top: 1.5rem;
+    @media (min-width: 768px) {
+        border-top: none;
+        padding-top: 0rem;
+     }
+
+    .shadowcntact {
+        //  box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.11);
+        display: none;
+        @media (min-width: 1400px) {
+           display: block;
+        }
+    }
+
+    .contact_slidebar {
+        // margin-top: 79px;
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #242a3a;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+
+        .contactAdd {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 38px;
+            .cicon {
+                width: 50px;
+            }
+
+            .cdetails {
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    color: #373a45;
+                    line-height: 28px;
+                    a {
+                        text-decoration: none;
+                        color: #242a3a;
+                    }
+                }
+            }
+        }
+    }
+
+    .rightContaint {
+        padding: 0px 45px;
+        @media (min-width: 992px) {
+            margin-top: 79px;
+            padding: 0;
+            padding-left: 25%;
+        }
+        .rightContaint-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            max-width: 884px;
+            margin: 0 auto;
+            h1 {
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: #242a3a;
+                margin-bottom: 50px;
+                @media (min-width: 768px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+
+            h2 {
+                color: #e9552b;
+                font-size: 1.3rem;
+                font-family: "Montserrat";
+                font-weight: 600;
+                @media (min-width: 768px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .bv-no-focus-ring a {
+                display: block;
+                margin-bottom: 17px;
+                @media (min-width: 576px) {
+                display: inline-block;
+                margin-bottom: 0;
+                }
+            }
+
+            .fgroup {
+                width: calc(50% - 25px);
+                margin-bottom: 25px;
+                //margin-right: 25px;
+
+                .finput {
+                    width: 100%;
+                    border-radius: 0;
+                    min-height: 64px;
+                    border: solid 2px #ccc;
+                    padding-left: 22px;
+                }
+                .ftarea {
+                    width: 100%;
+                    border-radius: 0;
+                    min-height: 260px;
+                    border: solid 1px #979797;
+                    padding: 28px 26px;
+                }
+
+                .bgorang {
+                    background: #e8552a !important;
+                    font-family: "Montserrat";
+                    color: #fff !important;
+                }
+
+                .plusBtn {
+                    background: #fff;
+                    color: #000;
+                    border: solid 1px #e8552a;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 0.8rem;
+                    font-family: "Montserrat";
+                    padding: 15px 25px;
+                    max-width: 100%;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    margin-bottom: 28px;
+                    min-width: 100%;
+                    @media (min-width: 576px) {
+                        min-width: auto;
+                    }
+                    svg {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.createAccount {
+    margin-top: 62px;
+
+    .shadowcntact {
+        //  box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.11);
+    }
+
+    .contact_slidebar {
+        // margin-top: 79px;
+
+        h2 {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #242a3a;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+
+        .contactAdd {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 38px;
+
+            .cicon {
+                width: 50px;
+            }
+
+            .cdetails {
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    color: #373a45;
+                    line-height: 28px;
+
+                    a {
+                        text-decoration: none;
+                        color: #242a3a;
+                    }
+                }
+            }
+        }
+    }
+
+    .rightContaint {
+        margin-top: 25px;
+        padding-left: 15px;
+        @media (min-width: 768px) {
+            margin-top: 79px;
+            padding-left: 137px;
+        }
+
+        .rightContaint-form {
+          
+            margin-left: 15px;
+            margin-bottom: 15px;
+            max-width: 822px;
+            margin: 0 auto;
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            h1 {
+                font-family: "Open Sans", sans-serif;
+                font-weight: bold;
+                font-size: 1.1rem;
+                color: #242a3a;
+                margin-bottom: 23px;
+                @media (min-width: 768px) {
+                    font-size: 1.5rem;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .snbtn{
+                justify-content: center;
+                @media (min-width: 768px) {
+                    justify-content: flex-end;
+                }
+            }
+
+            .bd-top{
+                border-top: solid 1px #ccc;
+                padding-top: 25px;
+            }
+
+            .fgroup {
+                width: calc(100% - 25px);
+                margin-bottom: 25px;
+              
+
+                @media (min-width: 768px) {
+                    width: calc(50% - 25px);
+                
+                    margin-right: 25px;
+                }
+
+                .finput {
+                    width: 100%;
+                    border-radius: 0;
+                    min-height: 64px;
+                    border: solid 2px #ccc;
+                    padding-left: 22px;
+                }
+                .ftarea {
+                    width: 100%;
+                    border-radius: 0;
+                    min-height: 260px;
+                    border: solid 1px #979797;
+                    padding: 28px 26px;
+                }
+
+                .plusBtn {
+                    width: 200px;
+                    background: #e8552a;
+                    color: #fff;
+                    border: none;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    font-family: "Montserrat";
+                    padding: 13px 25px;
+                    max-width: 167px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    margin-bottom: 28px;
+                    svg {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

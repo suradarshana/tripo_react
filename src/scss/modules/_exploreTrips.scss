@@ -1,0 +1,398 @@
+.exploreTrips {
+    
+    /*  display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+
+    .tpD {
+        width: 137px;
+        margin-bottom: 1rem;
+        @media (min-width: 768px) {
+            margin-bottom: 0rem;
+        }
+
+        span {
+            min-width: 132px;
+            display: block;
+            font-size: 1.1rem !important;
+            font-weight: 700;
+        }
+    }
+
+    .addcontaintRow {
+        padding: 2rem 0 0 0;
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .addBtn {
+        background: #e9552b !important;
+        color: #fff;
+    }
+
+    .btnCarousel {
+        padding: 1.2rem 2rem !important;
+        .carousel-caption {
+            position: inherit !important;
+            padding: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            padding: 0px 0px;
+            display: flex;
+            @media (min-width: 768px) {
+                padding: 0px 26px;
+            }
+
+            .sldBtn {
+                border: solid 1px #ccc;
+                padding: 0.5rem 1rem;
+                min-width: 8rem;
+                margin-right: 0.5rem;
+                text-align: left;
+                background: transparent;
+                @media (min-width: 768px) {
+                    padding: 0.9rem 1.4rem;
+                    min-width: 9rem;
+                }
+                .closeicon {
+                    /*    border: solid 1px #fff;
+                            border-radius: 50%;
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px; */
+                    display: none;
+                    svg {
+                        color: #fff;
+                        font-size: 18px;
+                        margin-left: 14px;
+                    }
+                }
+            }
+            .addBtn {
+                .closeicon {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("../../images/slarrow.svg") !important;
+        }
+
+        .carousel-control-next {
+            margin-right: -50px !important;
+        }
+    }
+
+    .leftColmn {
+        /*   grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        min-width: 300px; */
+        border-right: solid 1px #ccc;
+
+        .searchBox {
+            padding: 1rem 2rem;
+            @media (min-width: 768px) {
+                padding: 1rem 3.5rem;
+            }
+
+            .searchInput {
+                border: solid 1px #ccc;
+                border-radius: 0;
+                background-image: url();
+            }
+
+            .sIcon {
+                position: absolute;
+                right: 15px;
+                z-index: 9999;
+                background: transparent;
+                top: 15px;
+            }
+
+            .input-group-text {
+                border: none;
+                background: transparent;
+            }
+
+            .form-control {
+                border-color: #000;
+                height: 59px;
+                padding: 1.3rem 1.5rem;
+                font-size: 1.2rem;
+                border-radius: 0;
+                &:focus {
+                    border-radius: 0;
+                }
+            }
+        }
+
+        .filterhotelarrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            padding-bottom: 0;
+
+            @media (min-width: 768px) {
+                justify-content: flex-end;
+                width: 100%;
+                max-width: 105px;
+                display: none;
+            }
+
+            .downArrow {
+                background: #000;
+                color: #fff;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                margin-left: auto;
+                cursor: pointer;
+                font-size: 14px;
+                /* font-weight: bold; */
+            }
+        }
+
+        .leftBottom {
+            padding: 25px 85px;
+            display: none;
+
+            @media (min-width: 768px) {
+                display: inherit;
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+
+            .range {
+                .price-range {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                }
+
+                .rangeSlider {
+                    margin-top: 1rem;
+                }
+            }
+
+            .custom-control.custom-radio {
+                margin-bottom: 20px;
+            }
+
+            .duration {
+                margin: 30px 0px;
+
+                .custom-control-label {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.875rem;
+                    margin-top: 2px;
+                    margin-left: 8px;
+
+                    &:before {
+                        border: #e9552b solid 1px;
+                        top: 2px;
+                    background: transparent;
+                    }
+                    &:after {
+                        top: 0.17rem;
+                    }
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    color: #fff;
+                    border-color: #e9552b;
+                    background-color: #e9552b;
+
+                }
+            }
+
+            .locationType {
+                margin: 30px 0px;
+
+                .custom-control-label {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.875rem;
+                    margin-top: 2px;
+                    margin-left: 8px;
+
+                    &:before {
+                        border: #e9552b solid 1px;
+                        top: 2px;
+                        background: transparent !important;
+                    }
+                    &:after {
+                        top: 0.17rem;
+                    }
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    color: #fff;
+                    border-color: #e9552b;
+                    background-color: #e9552b;
+                    
+                }
+            }
+        }
+    }
+
+    .rightColomn {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        .packageList {
+            padding: 2rem;
+
+            .packageOne {
+                margin-bottom: 20px;
+                h2 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    font-family: "Montserrat";
+                    @media (min-width: 768px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .carasolPackage {
+                    border-radius: 6px;
+                    overflow: hidden;
+
+                    .carousel-control-next {
+                        margin-right: 0px !important;
+                    }
+
+                    .carousel-control-prev {
+                        margin-left: 0px !important;
+                    }
+
+                    .carousel-control-next-icon {
+                        background-image: url("../../images/whiteArrow.png") !important;
+                        transform: rotate(180deg);
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .carousel-control-prev-icon {
+                        background-image: url("../../images/whiteArrow.png") !important;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .citylist {
+                    span {
+                        padding-right: 10px;
+                        font-size: 0.9rem;
+
+                        svg {
+                            margin-left: 10px;
+                            color: #e9552b;
+                        }
+                    }
+                }
+
+                .review {
+                    padding-bottom: 0.5rem;
+                    display: none;
+                    @media (min-width: 768px) {
+display: inherit;
+                    }
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 1rem;
+                        font-family: "Montserrat";
+                    }
+
+                    .star {
+                        color: #e8542c;
+                        svg{
+                            margin-right: 4px;
+                        }
+                    }
+                }
+
+                .separator {
+                    width: 100%;
+                    margin-left: 0px;
+                    display: none;
+                    @media (min-width: 768px) {
+                        width: 166px;
+                        display: inherit;
+                    }
+                }
+
+                .price {
+                    padding-bottom: 0.5rem;
+                    padding-top: 0.5rem;
+
+                    span {
+                        display: block;
+                    }
+
+                    .bld-text {
+                        font-weight: 800;
+                        font-size: 1.2rem;
+                    }
+
+                    .cost {
+                        color: #868686;
+                    }
+                }
+
+                .card-button {
+                    width: 100%;
+                    background: #e8552a;
+                    color: #fff !important;
+                    border: none;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-family: "Montserrat", sans-serif;
+                    padding: 12px 13px;
+                    max-width: 100%;
+                    margin-top: 1rem;
+                    margin-bottom: 1.5rem;
+                    border:solid 1px  #e8552a;
+                    @media (min-width: 768px) {
+                        max-width: 166px;
+                        margin-top: 1.5rem;
+                        margin-bottom: 0rem;
+                    }
+
+                    svg {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .container {
+            max-width: 919px !important;
+        }
+    }
+}

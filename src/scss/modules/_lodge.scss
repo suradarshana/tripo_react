@@ -1,0 +1,463 @@
+.naviTopSpace {
+    margin-top: 63px;
+}
+
+.breadcrumb {
+    background: transparent;
+    li {
+        .active {
+            color: #e9552b;
+        }
+
+        a {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #868686;
+        }
+    }
+}
+
+.map_section {
+    //  width: 430px;
+    .mapWrapper {
+        //width: 430px;
+    }
+}
+
+.lodgePage {
+    
+
+    display: block;
+        @media (min-width: 1200px) {
+            display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-row-start: 1;
+    grid-row-end: 2;
+        }
+
+    .searchBox {
+        max-width: 167px;
+        display: flex !important;
+        align-items: center !important;
+        height: 26px;
+        button{
+            padding-bottom: 8px !important;
+            background: transparent;
+                margin-left: -6px;
+                @media (min-width: 768px) {
+                    padding-bottom: 0px !important;
+                    margin-left: 0px;
+                }
+        }
+    }
+
+    .lodgeFilter {
+        .custom-select {
+            min-width: 144px;
+            width: auto;
+        }
+        .fliterForm{
+            display: block;
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .toglrform{
+            display: none;
+                @media (min-width: 768px) {
+                display: flex;
+                }
+        }
+
+        .rangeval {
+            padding: 0 !important;
+            margin: 15px 0px !important;
+        }
+        .filterhotelarrow{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @media (min-width: 768px) {
+                justify-content: flex-end;
+                width: 100%;
+max-width: 105px;
+            }
+            .fltext{
+                display: block;
+                @media (min-width: 768px) {
+                display: none;
+                }
+            }
+        }
+
+        .rangebar {
+            max-width: 166px;
+        }
+
+        .downArrow {
+            background: #000;
+            color: #fff;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-left: auto;
+            cursor: pointer;
+            font-size: 14px;
+            /* font-weight: bold; */
+        }
+    }
+
+    .packageList {
+        padding-top: 0;
+
+        .packageOne {
+            margin-bottom: 20px;
+
+            .gridR {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                min-width: 185px;
+                @media (min-width: 768px) {
+                    min-width: auto;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                    // font-family: "Montserrat";
+                    @media (min-width: 768px) {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    margin: 0;
+                    padding-right: 1rem;
+                }
+
+                span {
+                    color: #ccc;
+                    display: flex;
+                    padding-left: 9px;
+                    @media (min-width: 768px) {
+                        padding-left: 20px;
+                    }
+
+                    svg {
+                        color: #9f9f9f !important;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+
+            .packageDate {
+                color: #9f9f9f;
+            }
+
+            .canclname {
+            }
+
+            .carasolPackage {
+                border-radius: 6px;
+                overflow: hidden;
+
+                .carousel-control-next {
+                    margin-right: 0px !important;
+                }
+
+                .carousel-control-prev {
+                    margin-left: 0px !important;
+                }
+
+                .carousel-control-next-icon {
+                    background-image: url("../../images/whiteArrow.png") !important;
+                    transform: rotate(180deg);
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .carousel-control-prev-icon {
+                    background-image: url("../../images/whiteArrow.png") !important;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .citylist {
+                span {
+                    padding-right: 10px;
+                    font-size: 0.9rem;
+
+                    svg {
+                        margin-left: 10px;
+                        color: #e9552b;
+                    }
+                }
+            }
+
+            .review {
+                //padding-bottom: 0.5rem;
+                .request {
+                    color: #e9552b;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .separator {
+                width: 166px;
+                margin-left: 0px;
+                display: none;
+                @media (min-width: 768px) {
+                    display: inherit;
+                }
+            }
+
+
+
+            .price {
+                padding-bottom: 0.5rem;
+                padding-top: 0rem;
+                display: flex;
+                justify-content: space-between;
+
+                @media (min-width: 768px) {
+                    display: block;
+                }
+
+                span {
+                    display: block;
+                }
+
+                .regfont {
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .bld-text {
+                    font-weight: 700;
+                    font-size: 1rem;
+                }
+
+                .cost {
+                    color: #868686;
+                }
+            }
+
+            .card-button {
+                width: 100%;
+                background: #e8552a;
+                color: #fff !important;
+                border: none;
+                border-radius: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+                font-family: "Montserrat", sans-serif;
+                padding: 12px 13px;
+                max-width: 100%;
+                margin-top: 0rem;
+                border: solid 1px #e8552a;
+                margin-bottom: 2rem;
+                @media (min-width: 768px) {
+                    margin-top: 1.5rem;
+                }
+
+                svg {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .tpD {
+        width: 137px;
+
+        span {
+            min-width: 132px;
+            display: block;
+        }
+    }
+
+    .addcontaintRow {
+        padding: 2rem 0 0 0;
+        h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            @media (min-width: 768px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        .gridPorpuler {
+            .card {
+                padding: 0.5rem;
+                border: none;
+                width: calc(100% / 4);
+                position: relative;
+
+                .hoverBtn {
+                    position: absolute;
+                    top: 0;
+                    height: calc(100% - 38px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    .hoverBtn {
+                        visibility: visible;
+                    }
+                }
+
+                .bgWplusbtn {
+                    width: 100%;
+                    background: #c9431d;
+                    color: #fff;
+                    border: solid 1px #c9431d;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    font-family: "Montserraat", sans-serif;
+                    padding: 12px 17px;
+                    font-weight: normal;
+                    min-width: 165px;
+                    svg {
+                        color: #fff;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .card-body {
+                    padding: 1rem 0rem;
+                }
+
+                .gridR {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    h3 {
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                        margin: 0;
+                        padding-right: 1rem;
+                    }
+
+                    span {
+                        color: #ccc;
+                        display: flex;
+
+                        svg {
+                            color: #ccc !important;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    padding-left: 0px;
+                }
+
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    .addBtn {
+        background: #e9552b;
+        color: #fff;
+    }
+
+    .carousel-caption {
+        position: inherit !important;
+        padding: 0;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0px 26px;
+
+        .sldBtn {
+            border: solid 1px #ccc;
+            padding: 8px 35px;
+        }
+    }
+
+    .carousel-control-next-icon {
+        background-image: url("../../images/slarrow.svg") !important;
+    }
+
+    .carousel-control-next {
+        margin-right: -50px !important;
+    }
+
+    .leftColomn {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        box-shadow: 35px 0 35px -35px #ccc;
+
+        .addHeader {
+            box-shadow: 0px 0px 23px #ccc inset;
+            .cntflex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .goBack {
+                    display: none;
+                    @media (min-width: 768px) {
+                        display: inherit;
+                    }
+                    a{
+                        height: 25px;
+                    }
+                }
+            }
+        }
+
+        .container {
+            max-width: 919px !important;
+        }
+    }
+
+    .map_section {
+      display: none;
+        @media (min-width: 1200px) {
+            display: block;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        //  width: 430px;
+        .mapWrapper {
+            position: relative;
+            //   right: 0;
+           // top: -126px;
+            //  height: 100vh;
+            z-index: 9999;
+        }
+    }
+}

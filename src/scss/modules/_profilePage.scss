@@ -1,0 +1,525 @@
+.profilePage {
+    /*  display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    margin-top: 62px;
+    border-top: solid 1px #ccc;
+    @media (min-width: 768) {
+        border-top: none;
+    }
+
+    .proGrid {
+        .leftCol {
+
+            .rowOneboder {
+                padding-bottom: 0px !important;
+                border-bottom: none !important;
+                @media (min-width: 768px) {
+                padding: 25px 15px !important;
+                border-bottom: solid 1px #ccc !important;
+                }
+            }
+
+            .rowOne {
+                padding: 25px 15px;
+                @media (min-width: 768px) {
+                border-bottom: solid 1px #ccc;
+                }
+
+                @media (min-width: 1200px) {
+                    padding-left: 13% !important;
+                    padding: 39px 25px;
+                }
+
+                .b-avatar-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .avatarInfo {
+                    span {
+                        display: block;
+                        color: #000;
+                        text-align: left;
+                    }
+
+                    .bold {
+                        font-weight: 600;
+                    }
+                }
+
+                .b-avatar {
+                    margin-right: 2rem;
+                }
+            }
+            .borderBottom{
+                border-bottom: solid 1px #ccc;
+                padding-bottom: 25px;
+                @media (min-width: 768px) {
+                    border-bottom: inherit;
+                    padding-bottom: 0px;
+                }
+            }
+
+            .probox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 25px;
+                @media (min-width: 1024px) {
+                    margin-bottom: 0px;
+                }
+
+                .probox-img {
+                    width: 50px;
+
+                    @media (min-width: 1024px) {
+                        width: 100px;
+                    }
+                }
+
+                label {
+                    display: block;
+                    margin: 0;
+                }
+
+                span {
+                    display: block;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .rightCol {
+            padding: 39px 25px;
+
+            .bgWplusbtn {
+                width: 100%;
+                background: #fff;
+                color: #000;
+                border: solid 1px #c9431d;
+                border-radius: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.9rem;
+                font-family: "Montserraat", sans-serif;
+                padding: 12px 17px;
+                font-weight: normal;
+                min-width: 165px;
+
+                svg {
+                    color: #c9431d;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .tripFooter {
+        justify-content: space-between;
+        @media (min-width: 1024px) {
+            justify-content: flex-end;
+            margin-right: -15px;
+        }
+        .issue {
+        }
+        .canceltrip {
+            color: #dd5b37 !important;
+        }
+    }
+
+    .profileContaint {
+        -webkit-box-shadow: inset 0 20px 20px -20px rgba(218, 214, 214, 0.8);
+        -moz-box-shadow: inset 0 20px 20px -20px rgba(218, 214, 214, 0.8);
+        box-shadow: inset 0 20px 20px -20px rgba(218, 214, 214, 0.8);
+        padding-top: 53px;
+
+        .tabs.row {
+            display: block;
+            /* margin-bottom: 15px; */
+            @media (min-width: 1024px) {
+                display: flex;
+            }
+        }
+
+        .card {
+            position: inherit;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: transparent;
+            background-clip: inherit;
+            border: 0;
+            border-radius: 0;
+        }
+
+        .col-sm-auto {
+            // width: 200px;
+            padding: 15px;
+            // padding-right: 30px;
+            @media (min-width: 1024px) {
+                padding: 0 30px 0px 0;
+            }
+            .nav  {
+                border: solid 1px #e4e4e4;
+
+                @media (min-width: 1024px) {
+                    display: block;
+                    width: 178px;
+                }
+                .nav-item {
+                    width: 100%;
+                    @media (min-width: 1024px) {
+                    }
+
+                    a{
+                        width: 100%;
+                        @media (min-width: 1024px) {
+                            width: auto;
+                        }
+                    }
+
+                    &:last-child {
+                        a {
+                            border: none;
+                        }
+                    }
+                    a {
+                        padding: 0.9rem 1rem;
+                    }
+                }
+            }
+        }
+
+        .boxstyle {
+            padding: 31px 0px;
+            @media (min-width: 1024px) {
+                padding: 31px 18px;
+            }
+        }
+
+        .nav-pills .nav-link {
+            border-radius: 0.25rem;
+            background: #f8f8f8;
+            border-radius: 0;
+            border-bottom: solid 1px #e4e4e4;
+        
+            @media (min-width: 1024px) {
+                width: 176px;
+            }
+
+            &:hover {
+                color: #fff !important;
+                background-color: #e9552b;
+            }
+        }
+        .nav-pills .nav-link.active {
+            &:hover {
+                color: #fff !important;
+                background-color: #e9552b;
+            }
+        }
+        .nav-pills .nav-link.active,
+        .nav-pills .show > .nav-link {
+            color: #fff !important;
+            background-color: #e9552b;
+            border-radius: 0;
+            font-weight: 600;
+         
+            background-image: url("./../../images/nxt.png");
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-size: 10px;
+            background-position-y: center;
+            @media (min-width: 1024px) {
+                width: 203px !important;
+            }
+        }
+    }
+
+    .addcontaintRow {
+        padding: 2rem 0 0 0;
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .addBtn {
+        background: #e9552b;
+        color: #fff;
+    }
+
+    .btnCarousel {
+        .carousel-caption {
+            position: inherit !important;
+            padding: 0;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            padding: 0px 26px;
+
+            .sldBtn {
+                border: solid 1px #ccc;
+                padding: 8px 35px;
+            }
+        }
+
+        .carousel-control-next-icon {
+           background-image: url("../../images/slarrow.svg") !important;
+        }
+
+        .carousel-control-next {
+            margin-right: -50px !important;
+        }
+    }
+
+    .leftColmn {
+        /*   grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        min-width: 300px; */
+        border-right: solid 1px #ccc;
+
+        .searchBox {
+            padding: 17px 85px;
+
+            .searchInput {
+                border: solid 1px #ccc;
+                border-radius: 0;
+                background-image: url();
+            }
+
+            .sIcon {
+                position: absolute;
+                right: 0;
+                z-index: 9999;
+                background: transparent;
+                top: 6px;
+            }
+
+            .input-group-text {
+                border: none;
+                background: transparent;
+            }
+
+            .form-control {
+                border: none;
+            }
+        }
+
+        .leftBottom {
+            padding: 25px 85px;
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+
+            .range {
+                .price-range {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                }
+
+                .rangeSlider {
+                    margin-top: 1rem;
+                }
+            }
+
+            .custom-control.custom-radio {
+                margin-bottom: 20px;
+            }
+
+            .duration {
+                margin: 30px 0px;
+
+                .custom-control-label {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.875rem;
+                    margin-top: 2px;
+                    margin-left: 8px;
+
+                    &:before {
+                        border: #e9552b solid 1px;
+                        top: 2px;
+                        left: -32px;
+                    }
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    color: #fff;
+                    border-color: #e9552b;
+                    background-color: #e9552b;
+                }
+            }
+
+            .locationType {
+                margin: 30px 0px;
+
+                .custom-control-label {
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 0.875rem;
+                    margin-top: 2px;
+                    margin-left: 8px;
+
+                    &:before {
+                        border: #e9552b solid 1px;
+                        top: 2px;
+                        left: -32px;
+                    }
+                }
+
+                .custom-control-input:checked ~ .custom-control-label::before {
+                    color: #fff;
+                    border-color: #e9552b;
+                    background-color: #e9552b;
+                }
+            }
+        }
+    }
+
+    .rightColomn {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        .packageList {
+            padding-top: 2rem;
+            @media (min-width: 1024px) {
+                padding: 2rem;
+                padding-top: 0rem;
+            }
+
+            .packageOne {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    font-family: "Montserrat";
+                    @media (min-width: 768px) {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .carasolPackage {
+                    border-radius: 6px;
+                    overflow: hidden;
+
+                    .carousel-control-next {
+                        margin-right: 0px !important;
+                    }
+
+                    .carousel-control-prev {
+                        margin-left: 0px !important;
+                    }
+
+                    .carousel-control-next-icon {
+                     background-image: url("../../images/whiteArrow.png") !important;
+                        transform: rotate(180deg);
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .carousel-control-prev-icon {
+                       background-image: url("../../images/whiteArrow.png") !important;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .citylist {
+                    span {
+                        padding-right: 10px;
+                        font-size: 0.9rem;
+
+                        svg {
+                            margin-left: 10px;
+                            color: #e9552b;
+                        }
+                    }
+                }
+
+                .review {
+                    padding-bottom: 0.5rem;
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 1rem;
+                        font-family: "Montserrat";
+                    }
+
+                    .star {
+                        color: #e8542c;
+                    }
+                }
+
+                .separator {
+                    width: 166px;
+                    margin-left: 0px;
+                    display: none;
+                    @media (min-width: 768px) {
+                        display: block;
+                    }
+                }
+
+                .price {
+                    padding-bottom: 0.5rem;
+                    padding-top: 0.5rem;
+
+                    span {
+                        display: block;
+                    }
+
+                    .bld-text {
+                        font-weight: 800;
+                        font-size: 1.2rem;
+                    }
+
+                    .cost {
+                        color: #868686;
+                    }
+                }
+
+                .card-button {
+                    width: 100%;
+                    background: #e8552a;
+                    color: #fff !important;
+                    border: none;
+                    border-radius: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-family: "Montserrat", sans-serif;
+                    padding: 12px 13px;
+                    max-width: 166px;
+                    margin-top: 1.5rem;
+
+                    svg {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .container {
+            max-width: 919px !important;
+        }
+    }
+}

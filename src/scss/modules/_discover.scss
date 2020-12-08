@@ -1,0 +1,58 @@
+.innerHeader {
+    height: 101px;
+    background: #242a3a;
+    margin-top: 61px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+    @media (min-width: 768px) {
+        height: 126px;
+        margin-bottom: 64px;
+            
+     }
+
+    h1 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        @media (min-width: 768px) { 
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+.discoverGrid{
+    .newslist{
+        .newsCaption{
+
+        }
+    }
+
+    .card-text {
+        margin-top: 1.5rem;
+        line-height: 1.9rem;
+    }
+
+    .news{
+        margin-bottom: 2rem;
+    }
+
+    .lmBTN {
+        button {
+            padding: 1rem 2rem;
+            width: 175px;
+        }
+    }
+
+    .effect-lily{
+        img{
+            max-height: 184px;
+        }
+    }
+}
